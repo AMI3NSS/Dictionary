@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #b8b8b8;
+}
+.title {
+  text-align: center;
+  font-size: 1.5rem;
+}
+/* container */
+.container {
+  border: 1px solid;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.9);
+  border-radius: 5px;
+}
+/* input field */
+.input-field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 50px;
+}
+input {
+  width: 250px;
+  height: 30px;
+  padding: 5px;
+  border: none;
+  border-bottom: 3px solid;
+  outline: none;
+  background-color: transparent;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+input::placeholder {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* search btn */
+.search {
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #ebebeb;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.search:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* soft shadow */
+}
+/* words and meaning container */
+.words {
+  padding: 30px;
+  margin-top: 10px;
+}
+.word-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.word-meaning {
+  display: flex;
+  gap: 10px;
+  margin-top: 5px;
+}
+.fa-volume-high {
+  cursor: pointer;
+}
+.speech,
+.phonetics {
+  font-size: 11px;
+}
+
+.meaning1 {
+  margin-top: 25px;
+  padding: 10px;
+  width: 450px;
+}
+.meaning2 {
+  margin-top: 25px;
+  border-left: 10px solid;
+  padding-left: 20px;
+  width: 450px;
+}
+
+.m1 {
+  font-size: 15px;
+  font-weight: bold;
+}
+.m2 {
+  font-size: 14px;
+  font-style: italic;
+}

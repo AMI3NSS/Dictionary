@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--Container body-->
+    <div class="container">
+      <h3 class="title">Dictionary</h3>
+      <!--Input field -->
+      <div class="input-field">
+        <input type="text" id="inputt" placeholder="Enter a word" />
+        <button class="search" id="search">Search</button>
+      </div>
+      <!--Worrd-->
+      <div class="words">
+        <div class="word-heading">
+          <h3 id="heading"></h3>
+          <i
+            class="fa-solid fa-volume-high"
+            id="volume"
+            onclick="playSound()"
+          ></i>
+        </div>
+        <div class="word-meaning">
+          <p class="speech" id="speech"></p>
+          <p class="phonetics" id="phonetics"></p>
+        </div>
+      </div>
+      <div class="meaning1" id="meaning1">
+        <p class="m1" id="m1"></p>
+      </div>
+      <div class="meaning2">
+        <p class="m2" id="m2"></p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
